@@ -13,8 +13,9 @@ services:
       - key: DEBUG
         value: false
 
-  - type: static
+  - type: web
     name: az900-study-planner-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: "npm install && npm run build"
     staticPublishPath: dist
